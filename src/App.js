@@ -21,7 +21,7 @@ const App = () => {
 
     const handlePredict = async () => {
         try {
-            const response = await fetch("https://localhost:5000/predict", {
+            const response = await fetch("https://customer-churn-prediction-y1xf.onrender.com/predict", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -32,7 +32,7 @@ const App = () => {
             if (data.error) {
                 alert(`Error: ${data.error}`);
             } else {
-                setPrediction(data.prediction);
+                setPrediction(data.message);
             }
         } catch (error) {
             alert(`Error: ${error.message}`);
