@@ -36,7 +36,7 @@ const FeatureInput = ({ features, setFeatures }) => {
     value={features[feature]}
     onChange={handleInputChange}
     placeholder={placeholders[feature]} // Add the placeholder here
-    className="w-full px-4 py-2 text-gray-200 bg-black border border-gray-600 rounded-md hover:border-gray-400 focus:ring-1 focus:ring-blue-500 focus:outline-none placeholder-gray-400 placeholder-opacity-20"
+    className="w-full px-4 py-2 text-gray-200 bg-black border border-gray-600 rounded-md hover:border-gray-400 focus:ring-1 focus:ring-blue-500 focus:outline-none placeholder-gray-400 placeholder-opacity-40"
 />
                 </div>
             ))}

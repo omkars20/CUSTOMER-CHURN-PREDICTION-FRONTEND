@@ -21,7 +21,7 @@ const App = () => {
 
     const handlePredict = async () => {
         try {
-            const response = await fetch("https://your-backend-url/predict", {
+            const response = await fetch("https://localhost:5000/predict", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
